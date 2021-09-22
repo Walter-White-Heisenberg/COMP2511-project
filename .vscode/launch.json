@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "cwd": "${workspaceRoot}",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - asdf",
+            "request": "launch",
+            "mainClass": "test.asdf",
+            "projectName": "W09B-Darank_cdc3311b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - tttt",
+            "request": "launch",
+            "mainClass": "unsw.dungeon.tttt",
+            "projectName": "W09B-Darank_cdc3311b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DungeonApplication",
+            "request": "launch",
+            "vmArgs": "--module-path ./lib/symlink_javafx --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "unsw.dungeon.DungeonApplication"
+        }
+    ]
+}

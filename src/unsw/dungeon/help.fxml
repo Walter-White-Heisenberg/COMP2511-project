@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="background" fitHeight="632.0" fitWidth="922.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Bloom />
+         </effect></ImageView>
+      <Button fx:id="back" layoutX="770.0" layoutY="538.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleBack" text="back" textFill="#2e00fa">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <TextFlow layoutX="100.0" layoutY="17.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Constantly moves toward the player. The player dies after collision with an enemy if withou sword or portal." wrappingWidth="588.45068359375" />
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f2b604" />
+               </light>
+            </Lighting>
+         </effect>
+      </TextFlow>
+      <TextFlow accessibleRole="CONTEXT_MENU" layoutX="100.0" layoutY="68.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="after picking a sword up, player can kill at most five enemies, however, if new player picks up a new sword, the old one will be destroyed" wrappingWidth="588.45068359375" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </TextFlow>
+      <TextFlow layoutX="100.0" layoutY="132.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="after picking the invincibility potion up, the player can kill any enemy which collides with him, however the effect has a time limit." wrappingWidth="588.45068359375" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="100.0" layoutY="193.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="door can be open by a key, there is only one corresponding key for each door. You can pick up key when you are holding a key" wrappingWidth="588.45068359375" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="100.0" layoutY="256.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="boulder is pushable the the block behind it contains nothing or accessible item such as opened door, switch. " wrappingWidth="588.45068359375" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="100.0" layoutY="317.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Switch can be a goal for some level, in other words, you can only pass the level when all the switch is pressed by a boulder if the goal says so." wrappingWidth="588.45068359375" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="100.0" layoutY="379.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="collect treasure can enable player get higher score. Also ,collecting all the treasure can be the goal for a leevl sometime." wrappingWidth="588.45068359375" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="100.0" layoutY="438.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A portal can teleport player and enemy to another portal. For each portal, there is only one pairing portal for it." wrappingWidth="588.45068359375" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="100.0" layoutY="498.0" prefHeight="60.0" prefWidth="250.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pass the exit can be one of the goal for some level." wrappingWidth="588.45068359375" />
+         </children>
+      </TextFlow>
+      <ImageView fx:id="exitim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="portalim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="treasureim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="switchim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="boulderim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="doorim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="potionim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="swordim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="enemyim" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <TextFlow layoutX="465.0" layoutY="102.0" prefHeight="93.0" prefWidth="354.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The act of solving puzzles, though that might seem abstract, is intrinsic to the work we do at school or even daily life. Dungeon is also a kind of puzzle, player may need to collect the treasure, killing enemy, press the switch to pass the game, depending on the designer. Hope you can enjoy the game." wrappingWidth="354.46240234375" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="464.0" layoutY="282.0" prefHeight="93.0" prefWidth="269.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1. At first, location of switch can be seen as a hint.                                                2. Watch your sword ! Killing which enemy may greatly influence your progress.                                              3.If there are too many enemies aggregated together, try to build or find a long valley to attract them from the origin point" wrappingWidth="588.45068359375" />
+         </children>
+      </TextFlow>
+      <Text fill="#aa02f5" layoutX="476.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About the dungeon" wrappingWidth="588.45068359375">
+         <font>
+            <Font name="System Italic" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#f55402" layoutX="476.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hint for hard level" wrappingWidth="588.45068359375">
+         <font>
+            <Font name="System Italic" size="28.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
